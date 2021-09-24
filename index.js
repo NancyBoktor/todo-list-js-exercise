@@ -1,5 +1,3 @@
-// Create a new task by adding to the arrays
-// A new task will be created as incomplete
 const newTask = function (title, description) {
   const task = {
     title,
@@ -20,7 +18,7 @@ const newTask = function (title, description) {
 const task1 = newTask(
   "Finishing my new assignment for today",
   "I have 10 tasks. "
-); // task 0
+);
 const task2 = newTask(
   "Finishing my old assignment for this week",
   "I have 9 tasks incomplete"
@@ -29,7 +27,9 @@ const task3 = newTask(
   "start my new assighnment for tomorrow",
   "I have a weekend assignment, i don not have a free time"
 );
+
 const tasks = [task1, task2, task3];
+
 for (let task of tasks) {
   task.logState();
   task.markCompleted();
